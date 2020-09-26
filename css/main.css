@@ -1,3 +1,9 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
 html {
   box-sizing: border-box;
   -webkit-text-size-adjust: 100%;
@@ -24,4 +30,45 @@ body {
 img {
   display: block;
   width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main {
+  margin: 2rem;
+  border-top: .2em solid #e2e2e2;
+  border-bottom: .2em solid #e2e2e2;
+}
+
+.button {
+  padding: .5em 1em .6em;
+  border: .2em solid #3783a3;
+  border-radius: 3rem;
+}
+
+@media only screen and (min-width: 38em) {
+
+  main> section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+
+
 }
